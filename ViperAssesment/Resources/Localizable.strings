@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  ViperAssesment
+
+  Created by Ahmad Maulana on 02/07/20.
+  Copyright © 2020 Ahmad Maulana. All rights reserved.
+*/
+
+// MARK: Application Level Properties
+"AppName"    = "ViperAssesment";
+
+// MARK: Buttons
+"Button:Login" = "Login";
+"Button:Logout" = "Logout";
+
+// MARK: TextFields
+
+"TextField:Email:Placeholder" = "Enter with your Email";
+"TextField:Password:Placeholder" = "Enter with your Password";
+
+// MARK: Labels
+"Label:Email" = "Email";
+"Label:Password" = "Password";
+
+
+// MARK: Home Module
+"Home:Title" = "Home";
+
+// MARK: Profile Module
+"Profile:Title" = "Profile";

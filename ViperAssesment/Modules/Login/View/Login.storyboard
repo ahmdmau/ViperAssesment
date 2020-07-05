@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="x9c-I3-tdp">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="TVK-bo-cGj" customClass="LoginViewController" customModule="ViperAssesment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y4F-Aj-6on">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFg-cz-vzt">
+                                <rect key="frame" x="20" y="84" width="374" height="45"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bL3-ev-hH1" customClass="CustomTextField" customModule="ViperAssesment" customModuleProvider="target">
+                                <rect key="frame" x="20" y="199" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ciZ-TP-Wvy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetY">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibPlaceholderLocKey" value="TextField:Email:Placeholder"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username / Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bT-aS-CKQ">
+                                <rect key="frame" x="20" y="169" width="374" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Label:Email"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tZ-Vl-WYu">
+                                <rect key="frame" x="20" y="369" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.23137254900000001" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CNc-3O-xNw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Button:Login"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtnAction:" destination="TVK-bo-cGj" eventType="touchUpInside" id="4fM-TH-MJx"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ZW-De-7xp" customClass="CustomTextField" customModule="ViperAssesment" customModuleProvider="target">
+                                <rect key="frame" x="20" y="289" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rEY-jb-8wM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetY">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibPlaceholderLocKey" value="TextField:Password:Placeholder"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPZ-xC-1dP">
+                                <rect key="frame" x="20" y="259" width="374" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Label:Password"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FPZ-xC-1dP" firstAttribute="leading" secondItem="RgG-tv-Zxg" secondAttribute="leading" constant="20" id="2Zx-7X-wHD"/>
+                            <constraint firstItem="8ZW-De-7xp" firstAttribute="leading" secondItem="RgG-tv-Zxg" secondAttribute="leading" constant="20" id="5Fl-9T-UUe"/>
+                            <constraint firstItem="RgG-tv-Zxg" firstAttribute="trailing" secondItem="8ZW-De-7xp" secondAttribute="trailing" constant="20" id="5hk-7Y-fTd"/>
+                            <constraint firstItem="wFg-cz-vzt" firstAttribute="top" secondItem="RgG-tv-Zxg" secondAttribute="top" constant="40" id="DL1-OU-V0u"/>
+                            <constraint firstItem="1tZ-Vl-WYu" firstAttribute="leading" secondItem="RgG-tv-Zxg" secondAttribute="leading" constant="20" id="EU9-nW-DBG"/>
+                            <constraint firstItem="RgG-tv-Zxg" firstAttribute="trailing" secondItem="FPZ-xC-1dP" secondAttribute="trailing" constant="20" id="J7k-jJ-aAX"/>
+                            <constraint firstItem="1tZ-Vl-WYu" firstAttribute="top" secondItem="8ZW-De-7xp" secondAttribute="bottom" constant="40" id="Jp5-2I-a2f"/>
+                            <constraint firstItem="wFg-cz-vzt" firstAttribute="leading" secondItem="RgG-tv-Zxg" secondAttribute="leading" constant="20" id="L7a-Q6-45m"/>
+                            <constraint firstItem="bL3-ev-hH1" firstAttribute="leading" secondItem="RgG-tv-Zxg" secondAttribute="leading" constant="20" id="TOW-a6-DbM"/>
+                            <constraint firstItem="7bT-aS-CKQ" firstAttribute="leading" secondItem="RgG-tv-Zxg" secondAttribute="leading" constant="20" id="b8H-2F-IiF"/>
+                            <constraint firstItem="RgG-tv-Zxg" firstAttribute="trailing" secondItem="wFg-cz-vzt" secondAttribute="trailing" constant="20" id="euG-8W-ad9"/>
+                            <constraint firstItem="RgG-tv-Zxg" firstAttribute="trailing" secondItem="7bT-aS-CKQ" secondAttribute="trailing" constant="20" id="gGv-f0-IjV"/>
+                            <constraint firstItem="FPZ-xC-1dP" firstAttribute="top" secondItem="bL3-ev-hH1" secondAttribute="bottom" constant="20" id="gOa-sN-1pt"/>
+                            <constraint firstItem="7bT-aS-CKQ" firstAttribute="top" secondItem="wFg-cz-vzt" secondAttribute="bottom" constant="40" id="ijW-Bt-Jzb"/>
+                            <constraint firstItem="RgG-tv-Zxg" firstAttribute="trailing" secondItem="1tZ-Vl-WYu" secondAttribute="trailing" constant="20" id="sJC-e0-GCA"/>
+                            <constraint firstItem="8ZW-De-7xp" firstAttribute="top" secondItem="FPZ-xC-1dP" secondAttribute="bottom" constant="10" id="sy1-Q9-jSi"/>
+                            <constraint firstItem="bL3-ev-hH1" firstAttribute="top" secondItem="7bT-aS-CKQ" secondAttribute="bottom" constant="10" id="yxy-iS-OSw"/>
+                            <constraint firstItem="RgG-tv-Zxg" firstAttribute="trailing" secondItem="bL3-ev-hH1" secondAttribute="trailing" constant="20" id="zdo-Ix-GCG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RgG-tv-Zxg"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="bL3-ev-hH1" id="5gA-Mf-YWH"/>
+                        <outlet property="loginBtn" destination="1tZ-Vl-WYu" id="pt1-ud-2bw"/>
+                        <outlet property="passwordTextField" destination="8ZW-De-7xp" id="Sa3-dN-qV7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xok-Id-nEL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>

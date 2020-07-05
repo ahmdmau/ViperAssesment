@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (5.2.1)
+  - Hero (1.5.0)
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
+  - ObjectMapper (4.2.0)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - RxAlamofire (5.3.1):
+    - RxAlamofire/Core (= 5.3.1)
+  - RxAlamofire/Core (5.3.1):
+    - Alamofire (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - UIImageColors (2.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Hero
+  - Kingfisher
+  - ObjectMapper
+  - R.swift
+  - RxAlamofire
+  - RxCocoa
+  - RxSwift
+  - UIImageColors
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Hero
+    - Kingfisher
+    - ObjectMapper
+    - R.swift
+    - R.swift.Library
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - UIImageColors
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  RxAlamofire: 15502b290253fab68688dafd60914c6390e9cc73
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  UIImageColors: d2ef3b0877d203cbb06489eeb78ea8b7788caabe
+
+PODFILE CHECKSUM: 46b99525ac87b336fa89ce5a297e046dca307255
+
+COCOAPODS: 1.9.3
